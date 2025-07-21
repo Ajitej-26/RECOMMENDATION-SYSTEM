@@ -1,33 +1,19 @@
- Project Overview
-This project implements a Recommendation System using Collaborative Filtering techniques via matrix factorization (such as SVD). The goal is to suggest relevant items (e.g., movies) to users based on their past preferences and behaviors.
+# Recommendation System using Collaborative Filtering
 
-Techniques Used
-Collaborative Filtering:
+A recommendation system built using matrix factorization (SVD) on user-item interactions. Helps recommend products/items to users based on preferences and behavior.
 
-Memory-based (user-user or item-item similarity)
+## 📌 Overview
+This project covers:
+- User-item ratings matrix
+- Collaborative filtering via Singular Value Decomposition (SVD)
+- Model evaluation via RMSE
+- Generating top-N recommendations
 
-Model-based (Matrix Factorization using SVD)
+## 📊 Dataset
+- Format: CSV (e.g., MovieLens, product ratings)
+- Columns: `user_id`, `item_id`, `rating`
 
-Surprise Library for building and evaluating the recommendation models
-
-Evaluation Metrics:
-
-RMSE (Root Mean Squared Error)
-
-MAE (Mean Absolute Error)
-
-Train/Test Split for validation
-
-Dataset
-The dataset (DataSet.xlsx) includes user-item ratings for movies. It has been processed for use with the Surprise library.
-
-✅ Deliverables
-✔️ Jupyter Notebook with collaborative filtering implementation
-
-✔️ Evaluation metrics (RMSE, MAE)
-
-✔️ Example recommendation results
-
-✔️ Dataset file and requirements file included
-
-
+## 🛠️ Requirements
+Install dependencies:
+```bash
+pip install -r requirements.txt
